@@ -1,5 +1,4 @@
-# droidfiles
-# WhatsHack v1.1
+# DroidFiles v1.0
 ## Author: https://github.com/thelinuxchoice/droidfiles
 ## IG: https://www.instagram.com/linux_choice
 ### Don't copy this code without give me the credits, nerd! 
