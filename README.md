@@ -21,31 +21,31 @@ Usage of DroidFiles for attacking targets without prior mutual consent is illega
 Install dependencies:
 # apt-get update
 # apt-get install openjdk-8-jdk
-# apt-get install gradle
 
-Use Java8:
-Get Java8 dir with command:
-# update-alternatives --list java
+For x86:
 
-Copy and replace dir on command:
-# update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# apt-get install libc6-dev-i386 lib32z1 default-jdk
 
-Download Android Studio:
-https://developer.android.com/studio
-
-Installing Android Studio:
-# unzip ~/Downloads/android*.zip -d /opt
-
-For AMD64 Arch, Install Android Studio dependencies:
-# apt-get install lib32z1 lib32ncurses6 lib32stdc++6
+For AMD64:
+# apt-get install lib32z1 lib32ncurses6 lib32stdc++6 default-jdk
 
 
-Run Android Studio:
-# cd /opt/android-studio/bin
-# ./studio.sh
+Download SDK-Tools:
+# wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 
-Go to SDK Manager (Configure -> SDK Manager) and Download:
-Android SDK Build-tools, Android SDK-tools, Android SDK platform-tools, Support Repository
+mkdir -p $HOME/Android/Sdk
+# unzip sdk-tools-linux* -d $HOME/Android/Sdk
+
+# Install SDKMAN
+
+# curl -s "https://get.sdkman.io" | bash
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
+# echo "Y" | sdk install java 8.0.191-oracle
+# sdk use java 8.0.191-oracle
+# sdk install gradle 2.2
+# sdk use gradle 2.2
+
+# echo "y" | $HOME/Android/Sdk/tools/bin/sdkmanager "platforms;android-25" "build-tools;25.0.1" "extras;google;m2repository" "extras;android;m2repository"
 
 # bash droidfiles.sh
 ```
