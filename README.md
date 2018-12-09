@@ -29,15 +29,12 @@ For x86:
 For AMD64:
 # apt-get install lib32z1 lib32ncurses6 lib32stdc++6
 
-
 Download SDK-Tools:
 # wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
-
-mkdir -p $HOME/Android/Sdk
+#mkdir -p $HOME/Android/Sdk
 # unzip sdk-tools-linux* -d $HOME/Android/Sdk
 
-# Install SDKMAN
-
+Install SDKMAN
 # curl -s "https://get.sdkman.io" | bash
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
 # echo "Y" | sdk install java 8.0.191-oracle
@@ -51,6 +48,7 @@ mkdir -p $HOME/Android/Sdk
 # cd droidfiles
 # bash droidfiles.sh
 ```
+
 ### Donate!
 Support the authors:
 
