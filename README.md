@@ -20,14 +20,14 @@ Usage of DroidFiles for attacking targets without prior mutual consent is illega
 ```
 Install dependencies:
 # apt-get update
-# apt-get install openjdk-8-jdk
+# apt-get install default-jdk apksigner
 
 For x86:
 
-# apt-get install libc6-dev-i386 lib32z1 default-jdk
+# apt-get install libc6-dev-i386 lib32z1
 
 For AMD64:
-# apt-get install lib32z1 lib32ncurses6 lib32stdc++6 default-jdk
+# apt-get install lib32z1 lib32ncurses6 lib32stdc++6
 
 
 Download SDK-Tools:
@@ -47,6 +47,8 @@ mkdir -p $HOME/Android/Sdk
 
 # echo "y" | $HOME/Android/Sdk/tools/bin/sdkmanager "platforms;android-25" "build-tools;25.0.1" "extras;google;m2repository" "extras;android;m2repository"
 
+# git clone https://github.com/thelinuxchoice/droidfiles
+# cd droidfiles
 # bash droidfiles.sh
 ```
 ### Donate!
