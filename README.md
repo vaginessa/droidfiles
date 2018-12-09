@@ -5,6 +5,7 @@
 
 Get files from Android directories
 
+![df](https://user-images.githubusercontent.com/34893261/49698790-b3408a00-fbaf-11e8-86aa-470e8b2eb519.png)
 
 ### Features:
 #### Port Forwarding using SSH Tunneling with Serveo.net
@@ -23,7 +24,6 @@ Install dependencies:
 # apt-get install default-jdk apksigner
 
 For x86:
-
 # apt-get install libc6-dev-i386 lib32z1
 
 For AMD64:
@@ -42,8 +42,8 @@ mkdir -p $HOME/Android/Sdk
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
 # echo "Y" | sdk install java 8.0.191-oracle
 # sdk use java 8.0.191-oracle
-# sdk install gradle 2.2
-# sdk use gradle 2.2
+# sdk install gradle 2.14.1
+# sdk use gradle 2.14.1
 
 # echo "y" | $HOME/Android/Sdk/tools/bin/sdkmanager "platforms;android-25" "build-tools;25.0.1" "extras;google;m2repository" "extras;android;m2repository"
 
